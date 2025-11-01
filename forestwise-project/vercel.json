@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "netlify/functions/**/*.js": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "routes": [
+    {
+      "src": "/netlify/functions/(.*)",
+      "dest": "/netlify/functions/$1"
+    }
+  ]
+}
